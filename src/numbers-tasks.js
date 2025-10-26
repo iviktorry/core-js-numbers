@@ -197,7 +197,6 @@ function roundToPowerOfTen(/* num, pow */) {
  */
 function isPrime(/* n */) {
   throw new Error('Not implemented');
-  // if (n % 2 === 1 || n < 2) return true;
 }
 
 /**
@@ -230,9 +229,8 @@ function toNumber(/* value, def */) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  // return num * num * num;
-  throw new Error('Not implemented');
+function getCube(num) {
+  return num ** 3;
 }
 
 /**
@@ -263,8 +261,12 @@ function getFibonacciNumber(/* index */) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(/* n */) {
-  throw new Error('Not implemented');
+function getSumToN(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i += 1) {
+    total += i;
+  }
+  return total;
 }
 
 /**
